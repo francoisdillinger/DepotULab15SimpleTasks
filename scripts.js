@@ -19,21 +19,21 @@
       };
       $scope.friends = function() {
           
-          this.friends = myFriends;   
+          $scope.friend = [
+               'me',
+               'myself',
+               'and I',
+               'mojo',
+               'Mr. Bubbles',
+               'C-dub',
+               'Rara',
+               'Bita',
+               'Buttmay',
+              'Tony'  
+          ];    
           console.log('submitting');    
           
-            var myFriends = [
-              { name : 'me'},
-              { name : 'myself'},
-              { name : 'and I'},
-              { name : 'mojo'},
-              { name : 'Mr. Bubbles'},
-              { name : 'C-dub'},
-              { name : 'Rara'},
-              { name : 'Bita'},
-              { name : 'Buttmay'},
-              { name : 'Tony'}  
-          ]; 
+           // var myFriends = 
       };   
   });
   
