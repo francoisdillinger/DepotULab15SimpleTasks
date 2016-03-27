@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="simpleTasks">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    
+    <body>
+        <div ng-controller="button">
+            <button ng-click="buttonClick()">click me</button>
+            <hr>
+            <input type="text" 
+                   id="box" 
+                   ng-model='message'>
+            <h1>{{message}}</h1>
+            <button ng-click="anotherClick()">Click me next!</button>
+            <hr>
+            <div ng-style="myStyle" 
+                 ng-mouseenter="myStyle={'background-color':'blue'}"
+                 ng-mouseleave="myStyle={}">                 
+                <p>Trolololol!</p>
+            </div>
+            <hr>
+            <div ng-style="fontColor" 
+                 ng-click="fontColor={'color':changeColor()}">
+                <h1>What am I doing up this late?!?</h1>
+            </div>
+            <hr>
+            <div ng-style="nameStyle={'font-size':'50px'}">
+               {{myName}} 
+            </div>
+            <button ng-click="generateMyName()">Who is the fairest of them all?</button>
+            <hr>
+            <div>
+                <ul ng-repeat="friend in friends">
+                    <li> {{friend.name}} </li>
+                </ul>
+            </div>
+            <button ng-click="friends()">Do I have any friends?</button>
+            <hr>
+        </div>
+    </body>
+</html>
